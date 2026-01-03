@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		62094E792F08C3850083DB29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62094E722F08C3850083DB29 /* Assets.xcassets */; };
+		62094E7B2F08C3A90083DB29 /* LidWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62094E7A2F08C3A20083DB29 /* LidWatcher.swift */; };
+		62094E7D2F08C4490083DB29 /* LidSensorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62094E7C2F08C43F0083DB29 /* LidSensorManager.swift */; };
+		62094E7F2F08D4A90083DB29 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62094E7E2F08D4980083DB29 /* ContentView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		62094E332F08C2960083DB29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62094E1C2F08C2940083DB29 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 62094E232F08C2940083DB29;
+			remoteInfo = LidSensorWatcher;
+		};
+		62094E3D2F08C2960083DB29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62094E1C2F08C2940083DB29 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 62094E232F08C2940083DB29;
+			remoteInfo = LidSensorWatcher;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		62094E242F08C2940083DB29 /* LidSensorWatcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LidSensorWatcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		62094E322F08C2960083DB29 /* LidSensorWatcherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LidSensorWatcherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		62094E3C2F08C2960083DB29 /* LidSensorWatcherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LidSensorWatcherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		62094E722F08C3850083DB29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		62094E742F08C3850083DB29 /* LidSensorWatcher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LidSensorWatcher.entitlements; sourceTree = "<group>"; };
+		62094E7A2F08C3A20083DB29 /* LidWatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LidWatcher.swift; sourceTree = "<group>"; };
+		62094E7C2F08C43F0083DB29 /* LidSensorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LidSensorManager.swift; sourceTree = "<group>"; };
+		62094E7E2F08D4980083DB29 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		62094E352F08C2960083DB29 /* LidSensorWatcherTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = LidSensorWatcherTests;
+			sourceTree = "<group>";
+		};
+		62094E3F2F08C2960083DB29 /* LidSensorWatcherUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = LidSensorWatcherUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		62094E212F08C2940083DB29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62094E2F2F08C2960083DB29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62094E392F08C2960083DB29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		62094E1B2F08C2940083DB29 = {
+			isa = PBXGroup;
+			children = (
+				62094E762F08C3850083DB29 /* LidSensorWatcher */,
+				62094E352F08C2960083DB29 /* LidSensorWatcherTests */,
+				62094E3F2F08C2960083DB29 /* LidSensorWatcherUITests */,
+				62094E252F08C2940083DB29 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		62094E252F08C2940083DB29 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				62094E242F08C2940083DB29 /* LidSensorWatcher.app */,
+				62094E322F08C2960083DB29 /* LidSensorWatcherTests.xctest */,
+				62094E3C2F08C2960083DB29 /* LidSensorWatcherUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		62094E6E2F08C3850083DB29 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				62094E7A2F08C3A20083DB29 /* LidWatcher.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		62094E6F2F08C3850083DB29 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				62094E7C2F08C43F0083DB29 /* LidSensorManager.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		62094E702F08C3850083DB29 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		62094E712F08C3850083DB29 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				62094E7E2F08D4980083DB29 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		62094E762F08C3850083DB29 /* LidSensorWatcher */ = {
+			isa = PBXGroup;
+			children = (
+				62094E6E2F08C3850083DB29 /* App */,
+				62094E6F2F08C3850083DB29 /* Models */,
+				62094E702F08C3850083DB29 /* Utilities */,
+				62094E712F08C3850083DB29 /* Views */,
+				62094E722F08C3850083DB29 /* Assets.xcassets */,
+				62094E742F08C3850083DB29 /* LidSensorWatcher.entitlements */,
+			);
+			path = LidSensorWatcher;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		62094E232F08C2940083DB29 /* LidSensorWatcher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62094E462F08C2970083DB29 /* Build configuration list for PBXNativeTarget "LidSensorWatcher" */;
+			buildPhases = (
+				62094E202F08C2940083DB29 /* Sources */,
+				62094E212F08C2940083DB29 /* Frameworks */,
+				62094E222F08C2940083DB29 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LidSensorWatcher;
+			packageProductDependencies = (
+			);
+			productName = LidSensorWatcher;
+			productReference = 62094E242F08C2940083DB29 /* LidSensorWatcher.app */;
+			productType = "com.apple.product-type.application";
+		};
+		62094E312F08C2960083DB29 /* LidSensorWatcherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62094E492F08C2970083DB29 /* Build configuration list for PBXNativeTarget "LidSensorWatcherTests" */;
+			buildPhases = (
+				62094E2E2F08C2960083DB29 /* Sources */,
+				62094E2F2F08C2960083DB29 /* Frameworks */,
+				62094E302F08C2960083DB29 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				62094E342F08C2960083DB29 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				62094E352F08C2960083DB29 /* LidSensorWatcherTests */,
+			);
+			name = LidSensorWatcherTests;
+			packageProductDependencies = (
+			);
+			productName = LidSensorWatcherTests;
+			productReference = 62094E322F08C2960083DB29 /* LidSensorWatcherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		62094E3B2F08C2960083DB29 /* LidSensorWatcherUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62094E4C2F08C2970083DB29 /* Build configuration list for PBXNativeTarget "LidSensorWatcherUITests" */;
+			buildPhases = (
+				62094E382F08C2960083DB29 /* Sources */,
+				62094E392F08C2960083DB29 /* Frameworks */,
+				62094E3A2F08C2960083DB29 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				62094E3E2F08C2960083DB29 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				62094E3F2F08C2960083DB29 /* LidSensorWatcherUITests */,
+			);
+			name = LidSensorWatcherUITests;
+			packageProductDependencies = (
+			);
+			productName = LidSensorWatcherUITests;
+			productReference = 62094E3C2F08C2960083DB29 /* LidSensorWatcherUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		62094E1C2F08C2940083DB29 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					62094E232F08C2940083DB29 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					62094E312F08C2960083DB29 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 62094E232F08C2940083DB29;
+					};
+					62094E3B2F08C2960083DB29 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 62094E232F08C2940083DB29;
+					};
+				};
+			};
+			buildConfigurationList = 62094E1F2F08C2940083DB29 /* Build configuration list for PBXProject "LidSensorWatcher" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 62094E1B2F08C2940083DB29;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 62094E252F08C2940083DB29 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				62094E232F08C2940083DB29 /* LidSensorWatcher */,
+				62094E312F08C2960083DB29 /* LidSensorWatcherTests */,
+				62094E3B2F08C2960083DB29 /* LidSensorWatcherUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		62094E222F08C2940083DB29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62094E792F08C3850083DB29 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62094E302F08C2960083DB29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62094E3A2F08C2960083DB29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		62094E202F08C2940083DB29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62094E7F2F08D4A90083DB29 /* ContentView.swift in Sources */,
+				62094E7B2F08C3A90083DB29 /* LidWatcher.swift in Sources */,
+				62094E7D2F08C4490083DB29 /* LidSensorManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62094E2E2F08C2960083DB29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62094E382F08C2960083DB29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		62094E342F08C2960083DB29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 62094E232F08C2940083DB29 /* LidSensorWatcher */;
+			targetProxy = 62094E332F08C2960083DB29 /* PBXContainerItemProxy */;
+		};
+		62094E3E2F08C2960083DB29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 62094E232F08C2940083DB29 /* LidSensorWatcher */;
+			targetProxy = 62094E3D2F08C2960083DB29 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		62094E442F08C2960083DB29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		62094E452F08C2960083DB29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		62094E472F08C2970083DB29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LidSensorWatcher/LidSensorWatcher.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pratyaksh.com.LidSensorWatcher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		62094E482F08C2970083DB29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LidSensorWatcher/LidSensorWatcher.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pratyaksh.com.LidSensorWatcher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		62094E4A2F08C2970083DB29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pratyaksh.com.LidSensorWatcherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LidSensorWatcher.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LidSensorWatcher";
+			};
+			name = Debug;
+		};
+		62094E4B2F08C2970083DB29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pratyaksh.com.LidSensorWatcherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LidSensorWatcher.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LidSensorWatcher";
+			};
+			name = Release;
+		};
+		62094E4D2F08C2970083DB29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pratyaksh.com.LidSensorWatcherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = LidSensorWatcher;
+			};
+			name = Debug;
+		};
+		62094E4E2F08C2970083DB29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pratyaksh.com.LidSensorWatcherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = LidSensorWatcher;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		62094E1F2F08C2940083DB29 /* Build configuration list for PBXProject "LidSensorWatcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62094E442F08C2960083DB29 /* Debug */,
+				62094E452F08C2960083DB29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62094E462F08C2970083DB29 /* Build configuration list for PBXNativeTarget "LidSensorWatcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62094E472F08C2970083DB29 /* Debug */,
+				62094E482F08C2970083DB29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62094E492F08C2970083DB29 /* Build configuration list for PBXNativeTarget "LidSensorWatcherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62094E4A2F08C2970083DB29 /* Debug */,
+				62094E4B2F08C2970083DB29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62094E4C2F08C2970083DB29 /* Build configuration list for PBXNativeTarget "LidSensorWatcherUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62094E4D2F08C2970083DB29 /* Debug */,
+				62094E4E2F08C2970083DB29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 62094E1C2F08C2940083DB29 /* Project object */;
+}
