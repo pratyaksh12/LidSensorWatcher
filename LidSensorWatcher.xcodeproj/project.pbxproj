@@ -11,6 +11,7 @@
 		62094E7B2F08C3A90083DB29 /* LidWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62094E7A2F08C3A20083DB29 /* LidWatcher.swift */; };
 		62094E7D2F08C4490083DB29 /* LidSensorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62094E7C2F08C43F0083DB29 /* LidSensorManager.swift */; };
 		62094E7F2F08D4A90083DB29 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62094E7E2F08D4980083DB29 /* ContentView.swift */; };
+		629A536E2F17ADF900394E88 /* HarmoniumEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629A536D2F17ADEB00394E88 /* HarmoniumEngine.swift */; };
 		62A487982F0A3165008E7B43 /* WebSocketClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A487972F0A315A008E7B43 /* WebSocketClient.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +41,7 @@
 		62094E7A2F08C3A20083DB29 /* LidWatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LidWatcher.swift; sourceTree = "<group>"; };
 		62094E7C2F08C43F0083DB29 /* LidSensorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LidSensorManager.swift; sourceTree = "<group>"; };
 		62094E7E2F08D4980083DB29 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		629A536D2F17ADEB00394E88 /* HarmoniumEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HarmoniumEngine.swift; sourceTree = "<group>"; };
 		62A487972F0A315A008E7B43 /* WebSocketClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,6 +114,7 @@
 		62094E6F2F08C3850083DB29 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				629A536D2F17ADEB00394E88 /* HarmoniumEngine.swift */,
 				62094E7C2F08C43F0083DB29 /* LidSensorManager.swift */,
 			);
 			path = Models;
@@ -290,6 +293,7 @@
 			files = (
 				62094E7F2F08D4A90083DB29 /* ContentView.swift in Sources */,
 				62094E7B2F08C3A90083DB29 /* LidWatcher.swift in Sources */,
+				629A536E2F17ADF900394E88 /* HarmoniumEngine.swift in Sources */,
 				62A487982F0A3165008E7B43 /* WebSocketClient.swift in Sources */,
 				62094E7D2F08C4490083DB29 /* LidSensorManager.swift in Sources */,
 			);
