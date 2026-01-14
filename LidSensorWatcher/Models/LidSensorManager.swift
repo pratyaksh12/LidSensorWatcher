@@ -90,4 +90,8 @@ class LidSensorManager: ObservableObject{
     
     
     
+    func sendKey(key: String, isDown: Bool) {
+        let json = "{\"key\": \"\(key)\", \"isDown\": \(isDown)}"
+        socketClient.send(message: json)
+    }
 }

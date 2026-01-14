@@ -53,10 +53,12 @@ class HarmoniumEngine: ObservableObject {
 
         let rate = freaquency / 440.0
         
-       
         speedControl.rate = Float(rate)
         
-        print("Set Rate: \(rate) (Freq: \(freaquency))")
+        
+        player.volume = Float(volume)
+        
+        print("Set Rate: \(rate) Vol: \(volume)")
     }
     
     func generateSineWave(freaquency: Double, format: AVAudioFormat) -> AVAudioPCMBuffer? {

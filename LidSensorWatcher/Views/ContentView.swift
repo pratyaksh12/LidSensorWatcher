@@ -37,6 +37,19 @@ struct MainView: View {
         }
         .frame(width: 350, height: 450)
         .background(VisualEffectView().ignoresSafeArea())
+        .onAppear {
+            NSEvent.addLocalMonitorForEvents(matching: [.keyDown, .keyUp]) { event in
+                let key = event.charactersIgnoringModifiers ?? ""
+                let isDown = event.type == .keyDown
+                
+                if "asdfghjkl".contains(key) && !event.isARepeat {
+                    print("Key: \(key) Down: \(isDown)")
+                    sensor.sendKey(key: key, isDown: isDown)
+                    return nil // Consume event (don't beep)
+                }
+                return event
+            }
+        }
     }
 }
 
