@@ -8,15 +8,38 @@
 import Foundation;
 import IOKit.hid;
 
+struct soundData: Decodable {
+    let freaquency: Double;
+    let volume: Double;
+}
+
 class LidSensorManager: ObservableObject{
     @Published var angle: Double =  0.0;
+    var lastUpdateTime: TimeInterval = 0;
     private var manager: IOHIDManager?
     
     private let socketClient = WebSocketClient();
+    private let harmonium = HarmoniumEngine();
     
     init(){
         setupHIDManager();
-        
+        setupConnection();
+    }
+    
+    private func setupConnection(){
+        socketClient.onReceive = { [weak self] jsonString in
+            guard let data = jsonString.data(using: .utf8) else { return }
+            
+            do{
+                let sound = try JSONDecoder().decode(soundData.self, from: data)
+                
+                DispatchQueue.main.async{
+                    self?.harmonium.updateSound(freaquency: sound.freaquency, volume: sound.volume)
+                }
+            } catch{
+                print("Error paring: \(error)")
+            }
+        }
         socketClient.connect();
     }
     
@@ -36,16 +59,23 @@ class LidSensorManager: ObservableObject{
         let context = UnsafeMutableRawPointer(Unmanaged.passUnretained(self).toOpaque());
         
         IOHIDManagerRegisterInputValueCallback(manager!, {context, _, _, value in
+            
+            let rawValue = IOHIDValueGetIntegerValue(value)
+            print("HID Event: \(rawValue)")
+            
             guard let context = context else {return}
             let sensorClass = Unmanaged<LidSensorManager>.fromOpaque(context).takeUnretainedValue()
-            let rawValue = IOHIDValueGetIntegerValue(value)
             
-            DispatchQueue.main.async{
+            
+            let currentTime = Date().timeIntervalSince1970
+            if currentTime - sensorClass.lastUpdateTime > 0.016 {
+                sensorClass.lastUpdateTime = currentTime
                 
-                sensorClass.angle = Double(rawValue);
-                let json = "{\"angle\": \(Double(rawValue))}";
-                sensorClass.socketClient.send(message: json);
-                
+                DispatchQueue.main.async{
+                    sensorClass.angle = Double(rawValue)
+                    let json = "{\"angle\": \(Double(rawValue))}"
+                    sensorClass.socketClient.send(message: json)
+                }
             }
             
             

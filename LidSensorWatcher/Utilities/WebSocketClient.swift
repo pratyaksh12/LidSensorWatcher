@@ -10,6 +10,8 @@ import Foundation
 class WebSocketClient: NSObject, URLSessionWebSocketDelegate{
     private var webSocketTask: URLSessionWebSocketTask?
     private var urlString = "ws://localhost:5000/ws/sensor";
+    var onReceive: ((String) -> Void)?
+
     func connect(){
         guard let url = URL(string: urlString) else {return}
         
@@ -33,12 +35,22 @@ class WebSocketClient: NSObject, URLSessionWebSocketDelegate{
     
     
     private func receiveMessage() {
-        webSocketTask?.receive { [weak self] result in switch
-            result {
-            case .failure(let error):
-                print("WebSocket Receive Error: \(error)")
-            case .success(_):
-                self?.receiveMessage()
+        webSocketTask?.receive { [weak self] result in
+            switch result {
+                case .failure(let error):
+                    print("WebSocket Receive Error: \(error)")
+                case .success(let message):
+                switch message{
+                    case .string(let text):
+                        self?.onReceive?(text)
+                    
+                    case .data(let data):
+                        print("data received: \(data)");
+                    @unknown default:
+                        break;
+                }
+                
+                self?.receiveMessage();
             }
         }
     }
