@@ -39,13 +39,16 @@ struct MainView: View {
         .background(VisualEffectView().ignoresSafeArea())
         .onAppear {
             NSEvent.addLocalMonitorForEvents(matching: [.keyDown, .keyUp]) { event in
-                let key = event.charactersIgnoringModifiers ?? ""
+                let key = (event.charactersIgnoringModifiers ?? "").lowercased()
                 let isDown = event.type == .keyDown
                 
-                if "asdfghjkl".contains(key) && !event.isARepeat {
-                    print("Key: \(key) Down: \(isDown)")
-                    sensor.sendKey(key: key, isDown: isDown)
-                    return nil // Consume event (don't beep)
+                if "asdfghjkl".contains(key) {
+                    // Only send data if it's NOT a repeat (avoid flooding network)
+                    if !event.isARepeat {
+                        print("Key: \(key) Down: \(isDown)")
+                        sensor.sendKey(key: key, isDown: isDown)
+                    }
+                    return nil // ALWAYS consume event to stop "Funk" beep
                 }
                 return event
             }
