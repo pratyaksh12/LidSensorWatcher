@@ -3,6 +3,7 @@
 using System.Net.Sockets;
 using System.Net.WebSockets;
 using System.Text;
+using System.Text.Json;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -43,7 +44,34 @@ async Task ProcessSensorData(WebSocket webSocket)
         if(result.MessageType == WebSocketMessageType.Text)
         {
             var jsonString = Encoding.UTF8.GetString(buffer, 0, result.Count);
-            Console.WriteLine($"Live : {jsonString}");
+            // Console.WriteLine($"Live : {jsonString}");
+
+            try
+            {
+                using var doc = JsonDocument.Parse(jsonString);
+                if(doc.RootElement.TryGetProperty("angle", out var angleProp))
+                {
+                    double angle = angleProp.GetDouble();
+                    //Formula -> Base + Angle * Multiplier
+
+                    double freaquency = 130.0 + (Math.Abs(angle) * 4);
+                    double volume = 0.5;
+
+                    var response = JsonSerializer.Serialize(new {freaquency, volume});
+                    var responseBytes = Encoding.UTF8.GetBytes(response);
+
+                    await webSocket.SendAsync(
+                        new ArraySegment<byte>(responseBytes),
+                        WebSocketMessageType.Text,
+                        true,
+                        CancellationToken.None
+                    );
+                }
+            }
+            catch
+            {
+                Console.WriteLine("An error occured");
+            }
         }
         else if(result.MessageType == WebSocketMessageType.Close)
         {
