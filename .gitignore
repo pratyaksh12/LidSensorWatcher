@@ -68,3 +68,23 @@ Carthage/Build
 
 iOSInjectionProject/
 .DS_Store
+
+## .NET / C#
+bin/
+obj/
+.vs/
+*.user
+*.suo
+*.userprefs
+*.launchSettings.json
+
+## Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+.env
+
+## Testing
+test_server.py
