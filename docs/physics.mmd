@@ -1,0 +1,5 @@
+graph TD
+    A[Lid Movement] -->|Delta Angle| B{Pump Air}
+    B -->|Increase| Pressure[Air Pressure]
+    C[Time Loop] -->|Decay| Pressure
+    Pressure -->|Low Pass Filter| Volume[Output Volume]

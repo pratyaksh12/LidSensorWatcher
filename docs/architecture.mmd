@@ -1,0 +1,7 @@
+graph TD
+    User -->|Key Press| MacApp[Mac App]
+    User -->|Lid Move| MacApp
+    MacApp -->|WebSocket JSON| Backend[.NET Backend]
+    Backend -->|Calculate State| Backend
+    Backend -->|Push Volume/Freq| MacApp
+    MacApp -->|Audio Engine| Speaker
